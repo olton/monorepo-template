@@ -11,10 +11,13 @@
     "tools/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "lint": "lerna run lint",
-    "format": "lerna run format",
-    "test": "lerna run test"
+    "reset": "nx reset",
+    "clean": "lerna clean",
+    "build": "lerna run build --parallel",
+    "lint": "lerna run lint --parallel",
+    "format": "lerna run format --parallel",
+    "test": "lerna run test --parallel",
+    "start": "lerna run start --parallel"
   },
   "keywords": [],
   "author": "Serhii Pimenov <serhii@pimenov.com.ua>",
